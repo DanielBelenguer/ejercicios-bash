@@ -2,10 +2,10 @@
 nombreUsuario=usuario
 x=0
 
+echo "Vamos a crear los usuarios"
 while [ x -eq 500 ]; 
-    do
-        echo "Vamos a crear los usuarios"
+    do        
         useradd -m -s /bin/bash $nombreUsuario$x
-        ((x++))
+        let $x=$x+1
         echo "El $nombreUsuario$x se a creado."
 done

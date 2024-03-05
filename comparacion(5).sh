@@ -2,7 +2,7 @@
 num1=56
 num2=78
 
-if [ num1 -eq num2 ]; 
+if [ num1 -eq num2 ] 
 then
     echo "Los números son iguales."
 elif [ num1 -gt num2 ]
